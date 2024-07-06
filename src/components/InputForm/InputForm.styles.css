@@ -1,0 +1,73 @@
+label {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--Slate700);
+}
+
+.input-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid var(--Slate700);
+    border-radius: 0.35rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    transition: border 0.05s;
+}
+
+.input-error {
+    border: 1px solid var(--Red-color);
+}
+
+.input-container:focus-within {
+    border: 2px solid var(--Lime-color);
+}
+
+.input-container input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+}
+
+.input-symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    background-color: var(--Slate100);
+}
+
+.rounded-input-symbol {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-mortgageAmount {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.input-symbol-error {
+    background-color: var(--Red-color);
+    color: var(--White-color);
+}
+
+.input-symbol-focused {
+    background-color: var(--Lime-color);
+    color: var(--Slate900);
+}
+
+.error-message {
+    color: var(--Red-color);
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
