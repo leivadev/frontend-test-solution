@@ -2,6 +2,7 @@ label {
     margin-top: 1rem;
     font-size: 1rem;
     color: var(--Slate700);
+    width: 100%;
 }
 
 .input-container {
@@ -9,21 +10,22 @@ label {
     justify-content: start;
     align-items: center;
     width: 100%;
-    height: 2.5rem;
+    height: 3rem;
     border: 1px solid var(--Slate700);
     border-radius: 0.35rem;
     cursor: pointer;
     margin-top: 0.5rem;
     font-weight: 500;
-    transition: border 0.05s;
 }
 
 .input-error {
     border: 1px solid var(--Red-color);
+    box-shadow: 0 0 0 2px var(--Red-color);
 }
 
 .input-container:focus-within {
-    border: 2px solid var(--Lime-color);
+    border: 1px solid var(--Lime-color);
+    box-shadow: 0 0 0 2px var(--Lime-color);
 }
 
 .input-container input {
@@ -34,6 +36,8 @@ label {
     cursor: pointer;
     outline: none;
     padding: 0 1rem;
+    color: var(--Slate900);
+    font-weight: 700;
 }
 
 .input-symbol {
@@ -47,13 +51,13 @@ label {
 }
 
 .rounded-input-symbol {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
 }
 
 .rounded-mortgageAmount {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
 }
 
 .input-symbol-error {

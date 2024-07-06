@@ -5,7 +5,6 @@ export type InputFormProps = {
   id: string;
   type: string;
   label: string;
-  value: number | string;
   inputSymbol: string;
   errorMessage: string;
   onChange: (Event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -13,7 +12,7 @@ export type InputFormProps = {
 
 const InputForm = (props: InputFormProps) => {
 
-  const { id, type, label, value, inputSymbol, errorMessage, onChange } = props;
+  const { id, type, label, inputSymbol, errorMessage, onChange } = props;
 
   const [isFocused, setIsFocused] = useState(false);
 
@@ -24,7 +23,7 @@ const InputForm = (props: InputFormProps) => {
         <input
           id={id}
           type={type}
-          value={value}
+          placeholder="0"
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           className={"remove-autofill-bg"}
