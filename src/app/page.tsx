@@ -1,8 +1,9 @@
+import MortgageCalculator from "./sections/MortgageCalculator/MortgageCalculator";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center p-24">
-      <h1 className="text-4xl font-bold">Test!</h1>
+    <main className="flex min-h-screen w-full items-center justify-center">
+      <MortgageCalculator />
     </main>
   );
 }
