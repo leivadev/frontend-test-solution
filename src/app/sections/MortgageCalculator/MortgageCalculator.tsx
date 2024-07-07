@@ -58,16 +58,15 @@ const MortgageCalculator = () => {
 
     let monthlyRepayment = 0;
     let totalRepayment = 0;
+    const monthlyInterestRate = (interestRate / 100) / 12;
+    const totalPayments = mortgageTerm * 12;
 
     if (mortgageType === "Repayment") {
-      const monthlyInterestRate = (interestRate / 100) / 12;
-      const totalPayments = mortgageTerm * 12;
-      monthlyRepayment = mortgageAmount * (monthlyInterestRate / (1 - Math.pow(1 + monthlyInterestRate, -totalPayments)));
-      totalRepayment = monthlyRepayment * totalPayments;
+      monthlyRepayment = mortgageAmount * ((monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalPayments)) / (Math.pow(1 + monthlyInterestRate, totalPayments) - 1));
     } else {
-      monthlyRepayment = ((mortgageAmount * interestRate) / 100) / 12;
-      totalRepayment = monthlyRepayment * mortgageTerm * 12;
+      monthlyRepayment = mortgageAmount * monthlyInterestRate;
     }
+    totalRepayment = monthlyRepayment * totalPayments;
 
     setMortgageResult({ monthlyRepayment: monthlyRepayment.toFixed(2), totalRepayment: totalRepayment.toFixed(2) });
     setIsResultAvailable(true);
