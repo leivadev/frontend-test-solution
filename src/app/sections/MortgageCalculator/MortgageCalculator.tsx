@@ -50,6 +50,10 @@ const MortgageCalculator = () => {
     return Object.keys(errors).length === 0;
   }
 
+  const formatRepayment = (repayment: number): string => {
+  return repayment.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+
   const calculateMortgageRepayment = () => {
     const mortgageAmount = parseFloat(mortgageData.mortgageAmount);
     const mortgageTerm = parseFloat(mortgageData.mortgageTerm);
@@ -68,7 +72,7 @@ const MortgageCalculator = () => {
     }
     totalRepayment = monthlyRepayment * totalPayments;
 
-    setMortgageResult({ monthlyRepayment: monthlyRepayment.toFixed(2), totalRepayment: totalRepayment.toFixed(2) });
+    setMortgageResult({ monthlyRepayment: formatRepayment(monthlyRepayment), totalRepayment: formatRepayment(totalRepayment)});
     setIsResultAvailable(true);
   };
 
