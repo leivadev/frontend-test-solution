@@ -5,8 +5,6 @@ import InputForm from "@/app/components/InputForm/InputForm.component";
 import RadioInputForm from "@/app/components/RadioInputform/RadioInputForm";
 import callIcon from "../../assets/images/icon-calculator.svg";
 import emptyResultIcon from "../../assets/images/illustration-empty.svg";
-import "./MortgageCalculator.styles.css";
-
 
 const MortgageCalculator = () => {
   const mortgageTypeOptions = ["Repayment", "Interest Only"];
