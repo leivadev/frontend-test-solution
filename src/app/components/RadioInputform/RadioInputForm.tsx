@@ -4,13 +4,14 @@ export type RadioInputFormProps = {
     id: string;
     label: string;
     name: string;
+    value: string;
     isChecked: boolean;
     onChange: (Event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const RadioInputForm = (props: RadioInputFormProps) => {
 
-    const { id, label, name, isChecked, onChange } = props;
+    const { id, label, name, value, isChecked, onChange } = props;
 
     return (
         <div className="radio-input-container">
@@ -18,6 +19,7 @@ const RadioInputForm = (props: RadioInputFormProps) => {
                 id={id}
                 type="radio"
                 name={name}
+                value={value}
                 checked={isChecked}
                 onChange={onChange}
             />
