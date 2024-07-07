@@ -1,12 +1,10 @@
-# Prueba de Frontend
+# Solución - Prueba de Frontend de RNB
+
+[Link - Calculadora de Hipotecas](https://frontend-test-solution.vercel.app/)
 
 ![Vista previa del diseño del desafío de la calculadora de amortización de hipotecas](./preview.jpg)
 
-## ¡Bienvenido! 👋
-
-Hola, en esta prueba analizaremos tu conocimiento general e incluso la velocidad de desarrollo.
-
-## El reto
+## Descripción del reto
 
 Tu reto es construir esta calculadora de hipotecas en ReactJS y lograr que se vea lo más cercano posible al diseño proporcionado.
 
@@ -18,52 +16,24 @@ Tus usuarios deberán poder:
 - Ver la disposición óptima de la interfaz dependiendo del tamaño de la pantalla de su dispositivo.
 - Ver estados de hover y focus para todos los elementos interactivos de la página.
 
-## Dónde encontrar todo
+# Tecnologías Utilizadas
 
-Tu tarea es construir el proyecto según los diseños dentro de la carpeta `/design`. Encontrarás versiones tanto para móvil como para escritorio del diseño.
+- Next.js para construcción del proyecto.
+- Diseño de componentes: React.js y CSS.
+- Diseño de secciones: React.js, Typescript y Tailwind CSS.
+- Vercel para deploy.
 
-Los diseños están en formato JPG estático. Usar JPG significa que necesitarás usar tu mejor criterio para estilos como `font-size`, `padding` y `margin`.
+# Bitácora
 
-Todos los assets requeridos para este proyecto están en la carpeta `/assets`. Las imágenes ya están exportadas para el tamaño de pantalla correcto y optimizadas.
+Antes de empezar el reto, tuve que dedicar un día a repasar conceptos cruciales de React como useEffect y los manejos de formularios, al igual que un repaso en tailwind CSS.
+Me hubiera gustado empezar pronto, pero por cuestiones universitarias y familiares no pude empezar hasta el jueves por la noche.
+El viernes le dediqué tiempo a analizar el reto, ver qué secciones hacer y qué componentes crear e inicializar el proyecto en next.js. Conseguí ajustar toda la metadata necesaria y dejar preparado temas como variables globales de CSS, las carpetas de componentes y secciones y pruebas dentro del proyecto. Concluí la noche adelantando el diseño inicial, ya que desde un principio supe que era lo que más costaría.
+El sábado dediqué todo el día a pulir la estructura de la calculadora, finalizar el diseño de los componentes, y antes de colocar la lógica del formulario, hice un programa básico en javascript para testear datos y corroborar que los resultados fueran correstos utilizando [Mortgage Calculator de Bankrate](https://www.bankrate.com/mortgages/mortgage-calculator/) como guía. Finalmente conseguí añadir los toques finales como renderizado condicional, funciones para validar datos y manejar cambios, refinar la calculadora de hipotecas y añadir pseudoelementos como hover y focus.
 
-También incluimos archivos de fuentes variables y estáticas necesarias para este proyecto. Puedes elegir entre enlazar a Google Fonts o usar los archivos de fuentes locales para alojar las fuentes tú mismo. Ten en cuenta que hemos eliminado los archivos de fuentes estáticas para los font-weight que no son necesarios para este proyecto.
+# Guías y tutoriales utilizados para completar el reto
 
-Hay también un archivo `style-guide.md` que contiene la información que necesitarás, como la paleta de colores y las fuentes.
-
-## Construyendo tu proyecto
-
-Siéntete libre de usar cualquier flujo de trabajo con el que te sientas cómodo:
-
-1. Inicia tu proyecto como un repositorio público en [GitHub](https://github.com/).
-2. Inicializa el proyecto de ReactJS
-3. Crear los componentes necesarios
-4. Crear los estilos utilizando SASS o Tailwind
-
-## Desplegando tu proyecto
-
-Hay muchas maneras de alojar tu proyecto de forma gratuita. Nuestros hosts recomendados son:
-
-- [Cloudflare Pages](https://pages.cloudflare.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-Puedes alojar tu sitio utilizando una de estas soluciones o cualquier otro proveedor de confianza.
-
-### Nuestro análisis
-
-- Se evaluará el conocimiento de HTML, CSS, JS, React;
-- Similitud al diseño original
-- Responsive
-- Veremos cómo se estructuran: las capas de la aplicación; datos, componentes, estados; manejo de errores; documentación.
-- Organización del código, legibilidad y comentarios.
-- Separación de componentes y uso de los estados de react
-- Funcionalidad
-- Historial de commits en git.
-- Tiempo en completar la prueba
-
-### Plus:
-
-- _(Opcional)_ Utilizar NextJS
-- _(Opcional)_ Utilizar Typescript
-- _(Opcional)_ Agregar información de tutoriales, guías o ayuda recibida para resolver el desafío
+- [Tailwind References](https://tailwindcss.com/resources)
+- [React.js References](https://react.dev/reference/react)
+- [Mortgage Calculator - Bankrate](https://www.bankrate.com/mortgages/mortgage-calculator/)
+- [Mortgage Calculators - Wikipedia](https://en.wikipedia.org/wiki/Mortgage_calculator)
+- [Aprende React ahora! curso completo para crear aplicaciones - HolaMundo](https://youtu.be/yIr_1CasXkM?si=P680VUHPHqSiqD3f)
