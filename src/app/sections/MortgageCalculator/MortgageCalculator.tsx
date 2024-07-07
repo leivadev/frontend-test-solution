@@ -85,7 +85,7 @@ const MortgageCalculator = () => {
       <section className="w-full bg-white sm:rounded-t-3xl lg:rounded-l-3xl lg:rounded-r-none">
         <header className="flex justify-between flex-row items-center px-8 py-8 pb-4">
           <h1 className="font-bold text-2xl text-slate900">Mortgage Calculator</h1>
-          <button className="text-slate500 underline text-md" onClick={clearForm}>Clear All</button>
+          <button className="text-slate500 underline text-md hover:text-slate-700" onClick={clearForm}>Clear All</button>
         </header>
         <div className="px-8">
           <form className="flex flex-col gap-4" onSubmit={FormSubmit}>
@@ -136,7 +136,7 @@ const MortgageCalculator = () => {
               {error.mortgageType && <p className="text-red text-sm">{error.mortgageType}</p>}
             </div>
             <div className="w-full flex max-lg:justify-start max-lg:items-center">
-              <div className="my-8 h-full bg-lime py-3 px-8 rounded-full flex flex-wrap justify-center align-center gap-4">
+              <div className="my-8 h-full bg-lime hover:opacity-80 py-3 px-8 rounded-full flex flex-wrap justify-center align-center gap-4">
                 <Image src={callIcon} alt="Call Icon" width={24} height={24} />
                 <button
                 type="submit"

@@ -22,6 +22,11 @@
     background-color: hsla(61, 70%, 52%, .2);
 }
 
+.radio-input-container:hover {
+    border: 1px solid var(--Lime-color);
+    box-shadow: 0 0 0 1px var(--Lime-color);
+}
+
 .label-radio-input {
     width: 100%;
     margin-top: 0;
