@@ -1,5 +1,4 @@
 label {
-    margin-top: 1rem;
     font-size: 1rem;
     color: var(--Slate700);
     width: 100%;
@@ -20,7 +19,7 @@ label {
 
 .input-error {
     border: 1px solid var(--Red-color);
-    box-shadow: 0 0 0 2px var(--Red-color);
+    box-shadow: 0 0 0 1px var(--Red-color);
 }
 
 .input-container:focus-within {
@@ -73,5 +72,5 @@ label {
 .error-message {
     color: var(--Red-color);
     font-size: 0.75rem;
-    margin-top: 0.25rem;
+    padding-top: 1rem;
 }
